@@ -1,5 +1,5 @@
 <?php
-$connect = mysqli_connect("localhost","root","","charan") or die("Error " . mysqli_error($connect));
+$connect = mysqli_connect("localhost","username","","charan") or die("Error " . mysqli_error($connect));
 
 $name=mysqli_real_escape_string($connect,$_POST['username']);
 $email=mysqli_real_escape_string($connect,$_POST['req_email']);
